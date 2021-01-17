@@ -136,8 +136,8 @@ class VAE():
             image_ = cv2.resize(image, dsize = (h, w), interpolation=cv2.INTER_CUBIC)
             image_pred_ = cv2.resize(image_pred, dsize = (h, w), interpolation=cv2.INTER_CUBIC)
     
-            img[j*h_:j*h_+h_,i*w_:i*w_+w_] = image_
-            img_pred[j*h_:j*h_+h_,i*w_:i*w_+w_] = image_pred
+            img[j*h:j*h+h, i*w:i*w+w] = image_
+            img_pred[j*h:j*h+h, i*w:i*w+w] = image_pred
         
         
         #plot

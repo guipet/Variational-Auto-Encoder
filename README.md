@@ -47,7 +47,12 @@ Here are the results of the following commands:
 ![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/espace_latent_2D.png)
 ![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/see_reconstruction_2D.png)
 
-There is an example of generation of the data:
+We can notice many things : 
+- the network is struggling to distinguish the 4 and the 9. We can understand that when we see the latent space (4 and 9 are superposed, so when the model rebuilt the original data from the latent space, it's hard to know what the data point is)
+- The numbers 0, 1, 3, 6 et 8 are esay to discern because they are quite well separeted in the latent space
+- The generation of data is quite good for a little model without regularizations (dropout, early stopping...)
+
+There is an example of generation of data for this network:
 ![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/data_gen_dim2.png)
 
 - `python run_main.py --latent_dim 3 --intermediate_dim_encoder [512, 128, 64] --intermediate_dim_decoder [512, 128, 64] --num_epochs 30 --batch_size 128 --see_reconstruction True --plot_latent_space True --plot2D False`

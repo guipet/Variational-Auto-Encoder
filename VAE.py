@@ -105,14 +105,14 @@ class VAE():
         Fit the model before!! 
         
         Inputs:
-        - Images : (nb_image, hauteur, largeur)
-        - size : tuple. Nombre de figures par ligne et colonne
+        - Images : Array (nb_image, hauteur, largeur) (Be careful, not a tensor!)
+        - size : tuple. Number of figures on each row and column
         
         Output:
         - figure plotly 
         '''
         
-        assert images.shape[0] < size[0]*size[1]
+        assert images.shape[0] <= size[0]*size[1]
         
         _ , h, w = images.shape
         
@@ -133,8 +133,8 @@ class VAE():
             i = int(idx % size[1])
             j = int(idx / size[1])
     
-            image_ = cv2.resize(image, dsize = (h_, w_), interpolation=cv2.INTER_CUBIC)
-            image_pred_ = cv2.resize(image_pred, dsize = (h_, w_), interpolation=cv2.INTER_CUBIC)
+            image_ = cv2.resize(image, dsize = (h, w), interpolation=cv2.INTER_CUBIC)
+            image_pred_ = cv2.resize(image_pred, dsize = (h, w), interpolation=cv2.INTER_CUBIC)
     
             img[j*h_:j*h_+h_,i*w_:i*w_+w_] = image_
             img_pred[j*h_:j*h_+h_,i*w_:i*w_+w_] = image_pred

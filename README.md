@@ -42,18 +42,18 @@ python run_main.py --latent_dim 55 --num_epochs 30 --batch_size 64 --see_reconst
 # Results
 Here are the results of the following commands: 
 
-- `python run_main.py --latent_dim 2 --intermediate_dim_encoder [512, 128] --intermediate_dim_decoder [512, 128] --num_epochs 30 --batch_size 128 --see_reconstruction True --plot_latent_space True --plot2D True`
+- `python run_main.py --latent_dim 2 --intermediate_dim_encoder [512, 128, 64] --intermediate_dim_decoder [512, 128, 64] --num_epochs 30 --batch_size 128 --see_reconstruction True --plot_latent_space True --plot2D True`
 
 ![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/espace_latent_2D.png)
-![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/espace_latent_2D.png)
-
-There is an example of generation of the data:
-![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/espace_latent_2D.png)
-
-- `python run_main.py --latent_dim 3 --intermediate_dim_encoder [512, 128] --intermediate_dim_decoder [512, 128] --num_epochs 30 --batch_size 128 --see_reconstruction True --plot_latent_space True --plot2D False`
-
-![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/espace_latent_2D.png)
-![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/espace_latent_2D.png)
+![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/see_reconstruction_2D.png)
 
 There is an example of generation of the data:
-![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/espace_latent_2D.png)
+![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/data_gen_dim2.png)
+
+- `python run_main.py --latent_dim 3 --intermediate_dim_encoder [512, 128, 64] --intermediate_dim_decoder [512, 128, 64] --num_epochs 30 --batch_size 128 --see_reconstruction True --plot_latent_space True --plot2D False`
+
+![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/espace_latent_3D.png)
+![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/see_reconstruction_3D.png)
+
+There is an example of generation of the data:
+![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/data_gen_dim3.png)

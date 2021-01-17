@@ -3,8 +3,7 @@
 The implementation of a Variational Auto Encoder (VAE) based on [this paper](https://arxiv.org/pdf/1312.6114.pdf).
 
 A VAE is a neural network which is supposed to efficiently generate data. The idea is that the inputs are projected in a latent space (encoding part)
-and then there are rebuilt from this latent space. This a different from a basic Auto Encoder because a VAE manages the issue from a Bayesian point of view.   
-The encoder and decoder are probabilistic models and they sample data from a law instead of just encoding and decoding the data. 
+and then there are rebuilt from this latent space. This a different from a basic Auto Encoder because a VAE manages the issue from a Bayesian point of view. The encoder and decoder are probabilistic models and they sample data from a law instead of just encoding and decoding the data. 
 
 Here, I have implemented a VAE for the MNIST dataset. The code has been developped in Tensorflow and was created to be the more efficient, general and succinct as possible. There are four files : 
 - **Layers.py** : Here are the encoder and the decoder. They are constructed from the *Layer class* of tensorflow.
@@ -17,11 +16,9 @@ Here, I have implemented a VAE for the MNIST dataset. The code has been developp
 
 
 # Prerequisites
-• Tensorflow version 2.5.0 or more recent
-
-• Numpy version 1.19.4 or more recent
-
-• Plotly version 4.14.1 or more recent
+• Tensorflow version 2.5.0 or more recent.  
+• Numpy version 1.19.4 or more recent.  
+• Plotly version 4.14.1 or more recent.
 
 # Parameters
 

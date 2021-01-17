@@ -17,9 +17,9 @@ def parse_args():
 
   parser.add_argument('--latent_dim', type=int, default=20, help='Dimension of latent space', required = True)
 
-  parser.add_argument('--intermediate_dim_encoder', type=list, default=[500], help='Number of hidden units of the encoder')
+  parser.add_argument('--intermediate_dim_encoder', type=list, default=[256], help='Number of hidden units of the encoder')
 
-  parser.add_argument('--intermediate_dim_decoder', type=list, default=[500], help='Number of hidden units of the decoder')
+  parser.add_argument('--intermediate_dim_decoder', type=list, default=[256], help='Number of hidden units of the decoder')
 
   parser.add_argument('--learn_rate', type=float, default=1e-3, help='Learning rate for Adam optimizer')
 

@@ -44,7 +44,7 @@ Here are the results of the following commands:
 
 - `python run_main.py --latent_dim 2 --intermediate_dim_encoder [512, 128, 64] --intermediate_dim_decoder [512, 128, 64] --num_epochs 30 --batch_size 128 --see_reconstruction True --plot_latent_space True --plot2D True`
 
-![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/espace_latent_2D.png)
+![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/espace_latent_2D.png "test")
 ![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/see_reconstruction_2D.png)
 
 We can notice many things : 

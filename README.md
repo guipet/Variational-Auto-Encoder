@@ -1,3 +1,3 @@
 # Variational-Auto-Encoder
 
-$$ \sum_{i=1}^n i = \fract{n(n+1)}{2} $$ 
+![alt text](plots/Esapce Latent 2D.png)

@@ -62,3 +62,13 @@ There is an example of generation of data for this network:
 
 There is an example of generation of the data:
 ![alt text](https://github.com/guipet/Variational-Auto-Encoder/blob/main/plots/data_gen_dim3.png)
+
+# References
+
+the implementation is based on the work of :  
+[1] [https://github.com/hwalsuklee/tensorflow-mnist-VAE](https://github.com/hwalsuklee/tensorflow-mnist-VAE/tree/e7903ac398aa5fc3eec8470177abf6ef78d9cac1)  
+[2] [Variational Autoencoders as Generative Models with Keras](https://towardsdatascience.com/variational-autoencoders-as-generative-models-with-keras-e0c79415a7eb)  
+[3] [Tutorial on Variational Autoencoders](https://arxiv.org/pdf/1606.05908.pdf)  
+[4] [A Tutorial on Variational Autoencoders with a Concise Keras Implementation](https://tiao.io/post/tutorial-on-variational-autoencoders-with-a-concise-keras-implementation/)  
+[5] [Tutorial - What is a variational autoencoder?](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)  
+[6] [Tensorflow Example](https://www.tensorflow.org/guide/keras/custom_layers_and_models#putting_it_all_together_an_end-to-end_example)  

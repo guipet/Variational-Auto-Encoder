@@ -14,6 +14,7 @@ Here, I have implemented a VAE for the MNIST dataset. The code has been developp
 
 - **main.py** : This is the file to run the model and use all the possibilities offered by **VAE.py**. 
 
+**VAE.ipynb** is a jupyter notebook file to see how to use the VAE class. The only difference is about the plot, where we just plot the figures whereas in the **py** files we save the images.
 
 # Prerequisites
 • Tensorflow version 2.5.0 or more recent.  

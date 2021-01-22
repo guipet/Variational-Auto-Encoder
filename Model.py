@@ -7,7 +7,7 @@ class Network(Model):
     Combines the encoder and the decoder to create a VAE Tensorflow Model
     '''
 
-    def __init__(self, original_dim, intermediate_dim_encoder=[64], intermediate_dim_decoder = [64],
+    def __init__(self, original_dim, intermediate_dim_encoder=[256], intermediate_dim_decoder = [256],
                  latent_dim=32, name="autoencoder", **kwargs):
         '''
         Inputs:

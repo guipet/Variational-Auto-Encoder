@@ -15,7 +15,7 @@ class VAE():
     - evaluate the quality of the model
     '''
     
-    def model(self, original_dim, intermediate_dim_encoder=[64], intermediate_dim_decoder = [64], 
+    def model(self, original_dim, intermediate_dim_encoder=[256], intermediate_dim_decoder = [256], 
               latent_dim=3, name="autoencoder", **kwargs):
         '''
         Construct the VAE network

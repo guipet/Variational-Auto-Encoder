@@ -72,7 +72,7 @@ class Decoder(Layer):
         #couches intermédiaires
         self.seq = Sequential()
         for i in intermediate_dim:
-            self.seq.add( Dense(i, activation = 'relu') )
+            self.seq.add( Dense(i) )
         
         #couche finale
         self.final = Dense(original_dim, activation = 'sigmoid')
